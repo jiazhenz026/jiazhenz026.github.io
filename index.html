@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiazhen Zhang</title>
+  <meta name="description" content="Jiazhen Zhang — Bioengineering Ph.D. candidate at the University of Pennsylvania (Shen Lab). Optical microscopy instrumentation, metabolomics, and AI for Science." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #6b6b6b;
+      --line: #e6e6e6;
+      --accent: #8a6d3b; /* echoes the warm brown of the portrait */
+      --maxw: 940px;
+      --side: 240px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---------- Two-column layout ---------- */
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 80px 24px 96px;
+      display: grid;
+      grid-template-columns: var(--side) 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* ---------- Left sidebar ---------- */
+    aside {
+      position: sticky;
+      top: 80px;
+    }
+    .avatar {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #f0f0f0;
+      display: block;
+      margin-bottom: 20px;
+    }
+    aside h1 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    aside h1 .en { display: block; color: var(--muted); font-weight: 500; font-size: 15px; margin-top: 2px; }
+    aside .role { margin: 0 0 20px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    aside .role b { color: var(--fg); font-weight: 600; }
+
+    .social { display: flex; flex-direction: column; gap: 8px; }
+    .social a {
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 14px;
+      width: max-content;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1px;
+      transition: border-color .15s, color .15s;
+    }
+    .social a:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* ---------- Right main content ---------- */
+    main { min-width: 0; }
+    section { margin-bottom: 52px; }
+    section:last-child { margin-bottom: 0; }
+    section > h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+    p { margin: 0 0 14px; }
+    a { color: var(--accent); }
+
+    .item { margin-bottom: 26px; }
+    .item:last-child { margin-bottom: 0; }
+    .item h3 { margin: 0 0 4px; font-size: 16px; font-weight: 600; }
+    .item h3 a { text-decoration: none; }
+    .item h3 a:hover { text-decoration: underline; }
+    .item .meta { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+    .item p { margin: 0; color: #333; font-size: 15px; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .tag {
+      font-size: 13px; color: var(--muted);
+      border: 1px solid var(--line); border-radius: 999px;
+      padding: 2px 12px;
+    }
+
+    footer {
+      grid-column: 1 / -1;
+      margin-top: 48px; padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 13px;
+    }
+
+    /* ---------- Mobile: collapse to one column ---------- */
+    @media (max-width: 720px) {
+      .wrap {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 48px 22px 72px;
+      }
+      aside { position: static; top: auto; }
+      .avatar {
+        width: 128px;
+        margin: 0 auto 18px;
+      }
+      aside h1, aside .role { text-align: center; }
+      .social { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 14px; }
+      footer { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- ==================== Sidebar ==================== -->
+    <aside>
+      <img class="avatar" src="assets/avatar.jpg" alt="Jiazhen Zhang" />
+      <h1>Jiazhen Zhang <span class="en">张家祯</span></h1>
+      <p class="role">
+        <b>Ph.D. Candidate</b>, Bioengineering<br />
+        University of Pennsylvania
+      </p>
+      <nav class="social">
+        <a href="mailto:jiazhenz@seas.upenn.edu">Email</a>
+        <a href="https://github.com/jiazhenz026" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/jiazhen-zhang-3716b7289/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://orcid.org/0009-0009-6698-742X" target="_blank" rel="noopener">ORCID</a>
+      </nav>
+    </aside>
+
+    <!-- ==================== Main ==================== -->
+    <main>
+
+      <!-- About -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I'm a Bioengineering Ph.D. candidate at the University of Pennsylvania, working in the
+          <b>Shen Lab</b>. My research centers on <b>optical microscopy instrumentation</b> and
+          <b>metabolomics</b>—from building optical setups and writing acquisition and analysis code
+          to turning raw signals into readouts we can interpret at the level of single cells.
+        </p>
+        <p>
+          Alongside that, I'm deeply curious about <b>AI for Science</b> and keep a close eye on the
+          latest developments in AI, always looking for ways to put new tools to work on real
+          research problems.
+        </p>
+        <p>
+          At heart I'm a tinkerer and a geek—when I'm not in the lab I like building small things.
+          This website is one of them.
+        </p>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="item">
+          <h3>Stimulated Raman Scattering (SRS) Microscope</h3>
+          <p class="meta">Built from scratch in the Shen Lab</p>
+          <p>
+            A home-built stimulated Raman scattering microscope for label-free chemical imaging—
+            designed and assembled end to end: the optical path, the electronics, and the
+            acquisition and analysis software, all from the ground up.
+          </p>
+          <div class="tags">
+            <span class="tag">Optics</span>
+            <span class="tag">Electronics</span>
+            <span class="tag">Acquisition software</span>
+            <span class="tag">Label-free imaging</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3><a href="https://github.com/jiazhenz026/SciStudio" target="_blank" rel="noopener">SciStudio</a></h3>
+          <p class="meta">AI-native workflow runtime for multimodal scientific data</p>
+          <p>
+            A desktop runtime that turns messy, multimodal scientific analysis into typed workflow
+            graphs with formal block contracts, persisted artifacts, a plugin ecosystem, and
+            AI-assisted orchestration—so bench scientists can build complex pipelines without
+            living in code.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">TypeScript / Electron</span>
+            <span class="tag">AI orchestration</span>
+            <span class="tag">Workflow engine</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section id="publications">
+        <h2>Publications</h2>
+        <p style="color: var(--muted);">Coming soon.</p>
+      </section>
+
+      <!-- Interests -->
+      <section id="interests">
+        <h2>Interests</h2>
+        <p>
+          Outside of research, I like tinkering with the latest <b>AI tools</b>, hacking on
+          <b>embedded systems</b>, and contributing to <b>open-source software</b>—the same
+          build-things-to-understand-them itch that drives my lab work.
+        </p>
+        <p>
+          Off-screen, I'm a <b>CASI Level 2 certified snowboard instructor</b>, so you'll often
+          find me on a mountain when the season is on.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Jiazhen Zhang · Built with plain HTML &amp; CSS
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
